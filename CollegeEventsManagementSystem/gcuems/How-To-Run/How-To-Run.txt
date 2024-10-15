@@ -1,0 +1,6 @@
+1. install XAMPP,
+2. start Apache and MySQL,
+2. create a database in phpMyAdmin named "gcuems_db",
+3. import the data from "database/gcuems_db"
+4. type "localhost/gcuems" in the search bar.
+5. enjoy 👍
