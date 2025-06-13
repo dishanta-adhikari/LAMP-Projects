@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/cropped-GCU-Logo-circle.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Our Team</title>
+
+    <!-- CSS -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #fffbe9;
+      }
+
+      .wrapper {
+        margin-top: 60px;
+      }
+
+      .wrapper h1 {
+        font-family: "Dela Gothic One", cursive;
+        font-size: 60px;
+        margin-bottom: 60px;
+        text-align: center;
+        padding-bottom: 50px;
+        font-weight: 500;
+        /* color: #416a49; */
+        animation: wrapperfadeIn 0.5s ease-in-out;
+      }
+
+      @keyframes wrapperfadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      .team {
+        display: flex;
+        justify-content: space-evenly;
+        width: auto;
+        text-align: center;
+        flex-wrap: wrap;
+      }
+
+      .team .team_member {
+        background: #fff;
+        margin: 5px;
+        margin-bottom: 50px;
+        width: 300px;
+        padding: 20px;
+        line-height: 20px;
+        color: #8e8b8b;
+        position: relative;
+        width: 500px;
+        height: 350px;
+        border: 10px solid wheat;
+        border-radius: 50px;
+        box-shadow: 7px 7px 60px #222;
+        transition: 0.5s ease;
+        animation: wrapperslideIn 0.7s ease-in-out;
+      }
+
+      @keyframes wrapperslideIn {
+        from {
+          transform: translateY(-150px);
+        }
+
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      .team .team_member:hover {
+        transform: scale(1.1);
+      }
+
+      .team .team_member h3 {
+        /* color: #416a49; */
+        font-size: 26px;
+        margin-top: 50px;
+      }
+
+      .team .team_member p.role {
+        color: #ccc;
+        margin: 12px 0;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      .team .team_member .team_img {
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: wheat;
+      }
+
+      .team .team_member .team_img img {
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+      }
+
+      .team_img img {
+        background-size: cover;
+        object-fit: cover;
+        border: 1px solid white;
+        border-radius: 50%;
+      }
+
+      .column {
+        margin-bottom: 50px;
+      }
+
+      nav {
+        padding: 10px;
+      }
+
+      .text {
+        border-top-left-radius: 300px;
+        border-bottom-left-radius: 300px;
+        padding: 60px;
+        background-color: #555;
+      }
+
+      .ems {
+        color: white;
+      }
+
+      .iconic {
+        margin-left: -45px;
+      }
+
+      nav a:hover {
+        border-radius: 5px;
+        background-color: #555;
+        color: aliceblue;
+      }
+
+      nav {
+        background-color: #fffbe9;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      footer {
+        background-color: #111;
+        font-family: Helvetica;
+      }
+
+      .footercontainer {
+        width: 100%;
+        padding: 30px;
+      }
+
+      .socialicons {
+        display: flex;
+        justify-content: center;
+      }
+
+      .socialicons a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+      }
+
+      .socialicons a i {
+        font-size: 2em;
+        text-decoration: none;
+        color: black;
+        opacity: 0.9;
+      }
+
+      /* hover effect */
+      .socialicons a:hover {
+        background-color: #111;
+        transition: 0.3s ease;
+      }
+
+      .socialicons a:hover i {
+        color: white;
+        transition: 0.3s ease;
+      }
+
+      .footernav ul {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+      }
+
+      .footernav li {
+        list-style-type: none;
+      }
+
+      .footernav ul li a {
+        color: white;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 1.3em;
+        opacity: 0.7;
+        transform: 0.5s ease;
+      }
+
+      .footernav ul li a:hover {
+        opacity: 1;
+      }
+
+      .footerbottom {
+        background-color: #000;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .footerbottom p {
+        color: white;
+      }
+
+      .designer {
+        opacity: 0.7;
+        text-decoration: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 0px 5px;
+      }
+
+      .footernav ul li {
+        padding-top: 20px;
+      }
+
+      .contact {
+        color: aliceblue;
+      }
+
+      .close-button {
+        position: absolute;
+        top: 1px;
+        right: 18px;
+        cursor: pointer;
+        font-size: 40px;
+        color: #000;
+        transition: 0.5s ease;
+        font-weight: 1000;
+      }
+
+      .close-button:hover {
+        transform: scale(1.5);
+      }
+    </style>
+  </head>
+
+  <body>
+    <span id="closeModal" class="close-button">&times;</span>
+    <!-- team slides -->
+    <div class="wrapper">
+      <h1>Our Team</h1>
+      <div class="team">
+        <div class="team_member">
+          <div class="team_img">
+            <img
+              src="../assets/images/dishanta1-removebg-preview.jpg"
+              alt="Team_image"
+            />
+          </div>
+          <h3>Dishanta Adhikari</h3>
+          <p class="role">developer | Roll no. 20 BCA 5th sem</p>
+          <p>
+            𝐂𝐀@𝐀𝐒𝐓𝐔 | 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐄𝐧𝐭𝐡𝐮𝐬𝐢𝐚𝐬𝐭 | Guwahati, Assam, India Assam
+            Science and Technology University ASTU Bachelor of Computer
+            Applications - BCA, Computer Programming | Roll no. 20 BCA 5th sem
+          </p>
+        </div>
+        <div class="team_member">
+          <div class="team_img">
+            <img
+              src="../assets/images/shujan-removebg-preview.jpg"
+              alt="Team_image"
+            />
+          </div>
+          <h3>Shujan Kr Ray</h3>
+          <p class="role">developer and Tester | Roll no. 49 BCA 5th sem</p>
+          <p>
+            MERN Stack Developer | React.js, MongoDB, Express, Node.js | Full
+            Stack Developer | Java DSA | Aspiring software engineer | Roll no.
+            49 BCA 5th sem
+          </p>
+        </div>
+        <!-- <div class="team_member">
+                <div class="team_img">
+                    <img src="https://i.imgur.com/2Necikc.png" alt="Team_image">
+                </div>
+                <h3>Alex Wood</h3>
+                <p class="role">Support Lead</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere
+                    dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+            </div> -->
+      </div>
+    </div>
+
+    <footer>
+      <div class="footercontainer">
+        <div class="socialicons">
+          <a href="https://www.facebook.com/adhikari.dishanta"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <!-- <a href=""><i class="fa-brands fa-youtube"></i></a> -->
+        </div>
+
+        <div class="footernav">
+          <ul>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerbottom">
+        <p>
+          Copyright &copy;2023 Designed by <br /><span class="designer"
+            >Dishanta Adhikari</span
+          >
+        </p>
+      </div>
+    </footer>
+    <script>
+      const closeModal = document.getElementById("closeModal");
+      closeModal.addEventListener("click", () => {
+        window.location.href = "../index.php";
+      });
+    </script>
+  </body>
+</html>

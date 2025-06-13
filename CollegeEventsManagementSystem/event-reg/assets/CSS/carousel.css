@@ -1,0 +1,33 @@
+/* carousel */
+.carousel-inner img {
+
+    max-height: 38rem;
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.carousel-control-prev-icon {
+    filter: blur(8px);
+}
+
+.carousel-control-next-icon {
+    filter: blur(8px);
+}
+
+.carousel-indicators {
+    filter: blur(8px);
+}
+
+
+
+@media (max-width:600px) {
+
+    .carousel-inner img {
+        max-height: 20vh;
+        background-size: cover;
+        object-fit: cover;
+    }
+}
+
