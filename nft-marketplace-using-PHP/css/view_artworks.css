@@ -1,0 +1,136 @@
+:root {
+    --color-primary: #7f1aff;
+    /* purple */
+    --color-secondary: #e100ff;
+    /* pink */
+    --color-text-light: #e5e7eb;
+    /* light gray text */
+    --color-text-muted: #94a3b8;
+    /* muted text */
+    --color-card-bg: #1e293b;
+    /* dark slate background for cards */
+    --color-bg: #0f172a;
+    /* dark blue background for page */
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+.card {
+    background-color: var(--color-card-bg);
+    color: var(--color-text-light);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card .card-title {
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+.card .card-text {
+    color: var(--color-text-muted);
+}
+
+.btn-primary,
+.btn-success,
+.btn-warning,
+.btn-danger {
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: var(--color-text-light);
+}
+
+.btn-primary:hover {
+    background-color: #bf00ff;
+    border-color: #bf00ff;
+}
+
+.btn-success {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+.btn-success:hover {
+    background-color: #5a00cc;
+    border-color: #5a00cc;
+}
+
+.btn-warning {
+    background-color: #e0a800;
+    border-color: #e0a800;
+    color: #1a1a1a;
+}
+
+.btn-warning:hover {
+    background-color: #c69500;
+    border-color: #c69500;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: var(--color-text-light);
+}
+
+.btn-danger:hover {
+    background-color: #b52a3a;
+    border-color: #b52a3a;
+}
+
+.form-control,
+.form-select {
+    background-color: var(--color-card-bg);
+    color: var(--color-text-light);
+    border: 1px solid var(--color-secondary);
+    font-weight: 600;
+}
+
+.form-control::placeholder {
+    color: var(--color-text-muted);
+    opacity: 1;
+}
+
+/* Optional scrollbar styling for dark theme */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-secondary);
+    border-radius: 4px;
+}
+
+/* Alert info style override */
+.alert-info {
+    background-color: var(--color-card-bg);
+    color: var(--color-text-muted);
+    border-radius: 8px;
+    border: none;
+}

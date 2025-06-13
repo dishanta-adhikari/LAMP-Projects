@@ -1,0 +1,87 @@
+/* NFT list page styles */
+body {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+
+/* Cards */
+.nft-card {
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.nft-card:hover {
+    transform: translateY(-8px);
+}
+
+/* NFT Image inside card */
+.nft-card-img {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* NFT Title */
+.nft-card-title {
+    font-weight: 700;
+    color: #10b981;
+    /* emerald-500 */
+}
+
+/* Price text */
+.nft-price-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #059669;
+    /* emerald-600 */
+}
+
+/* Pay button with custom style */
+.nft-pay-btn {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    border: none;
+    font-weight: 700;
+    box-shadow:
+        0 0 8px #22c55e,
+        0 0 20px #16a34a;
+    transition: all 0.25s ease;
+    width: 100%;
+    border-radius: 0.75rem;
+}
+
+.nft-pay-btn:hover:not(:disabled),
+.nft-pay-btn:focus:not(:disabled) {
+    background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+    box-shadow:
+        0 0 18px #22c55e,
+        0 0 30px #16a34a;
+    transform: scale(1.05);
+    outline: none;
+    cursor: pointer;
+}
+
+/* Disabled Pay button */
+.nft-pay-btn:disabled {
+    background: #6b7280;
+    /* gray-500 */
+    box-shadow: none;
+    cursor: not-allowed;
+    color: #d1d5db;
+    /* gray-300 */
+}
+
+/* Payment success alert */
+#paymentAlert.nft-payment-alert {
+    background-color: #dcfce7;
+    /* green-50 */
+    color: #15803d;
+    /* green-700 */
+    border: 1px solid #bbf7d0;
+    /* green-200 */
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}

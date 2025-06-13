@@ -1,0 +1,189 @@
+/* Container */
+/* Root color variables */
+:root {
+    --color-primary: #6a0dad;
+    /* deep purple */
+    --color-secondary: #e91e63;
+    /* pink */
+    --color-accent: #2196f3;
+    /* bright blue */
+    --color-bg: #1a1a2e;
+    /* dark midnight */
+    --color-card-bg: #2e2e50;
+    /* dark slate */
+    --color-text-light: #e0e0e0;
+    --color-text-muted: #a0a0c0;
+}
+
+/* Global styles */
+body {
+    background: var(--color-bg);
+    color: var(--color-text-light);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.am-container {
+    background: linear-gradient(135deg, #f3e8ff 0%, #d7c1f2 100%);
+    color: black;
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: 0 8px 20px rgba(105, 53, 182, 0.25);
+}
+
+/* Alerts */
+.am-alert {
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+}
+
+/* Success Alert */
+.am-alert-success {
+    background-color: #9be7ff;
+    color: #05445e;
+    border: 1.5px solid #05445e;
+}
+
+/* Danger Alert */
+.am-alert-danger {
+    background-color: #ff9a9e;
+    color: #6b0000;
+    border: 1.5px solid #6b0000;
+}
+
+/* Buttons */
+.am-btn-primary {
+    background-color: #6a0dad;
+    /* deep purple */
+    border-color: #6a0dad;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(106, 13, 173, 0.4);
+    transition: background-color 0.3s ease;
+}
+
+.am-btn-primary:hover {
+    background-color: #8e2de2;
+    border-color: #8e2de2;
+}
+
+/* Warning button - coral */
+.am-btn-warning {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(255, 111, 97, 0.4);
+}
+
+.am-btn-warning:hover {
+    background-color: #e65c50;
+    border-color: #e65c50;
+}
+
+/* Danger button - vibrant red */
+.am-btn-danger {
+    background-color: #d72631;
+    border-color: #d72631;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(215, 38, 49, 0.5);
+}
+
+.am-btn-danger:hover {
+    background-color: #b31d27;
+    border-color: #b31d27;
+}
+
+/* Secondary button - teal */
+.am-btn-secondary {
+    background-color: #117a65;
+    border-color: #117a65;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(17, 122, 101, 0.4);
+}
+
+.am-btn-secondary:hover {
+    background-color: #14977f;
+    border-color: #14977f;
+}
+
+/* Form labels and inputs */
+.am-form-label {
+    color: #4b2354;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.am-input {
+    border-radius: 12px;
+    border: 2px solid #bba0d8;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.am-input:focus {
+    border-color: #6a0dad;
+    box-shadow: 0 0 8px rgba(106, 13, 173, 0.6);
+    outline: none;
+}
+
+/* Table */
+.am-table thead tr th {
+    background: #6a0dad;
+    color: #fff;
+    border-radius: 12px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.9rem 1rem;
+}
+
+.am-table tbody tr td {
+    border-top: 1px solid #d7c1f2;
+    color: #4b2354;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.75rem 1rem;
+}
+
+/* Modal */
+.am-modal-content {
+    border-radius: 16px;
+    background: #faf4ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.am-modal-header {
+    background: #8e2de2;
+    color: #fff;
+    border-bottom: none;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    font-weight: 700;
+    padding: 1.25rem 1.5rem;
+}
+
+.am-modal-footer {
+    border-top: none;
+    padding: 1rem 1.5rem;
+}
+
+/* Buttons inside modals */
+.am-modal-footer .am-btn-primary {
+    box-shadow: 0 4px 10px rgba(142, 45, 226, 0.5);
+}
+
+.am-modal-footer .am-btn-secondary {
+    box-shadow: none;
+    opacity: 0.8;
+}
+
+.am-modal-footer .am-btn-secondary:hover {
+    opacity: 1;
+}

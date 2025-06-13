@@ -1,0 +1,122 @@
+body {
+    background: var(--color-bg);
+    color: var(--color-text-light);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+
+:root {
+    --color-primary: #6a0dad;
+    /* deep purple */
+    --color-secondary: #e91e63;
+    /* pink */
+    --color-accent: #2196f3;
+    /* bright blue */
+    --color-bg: #1a1a2e;
+    /* dark midnight */
+    --color-card-bg: #2e2e50;
+    /* dark slate */
+    --color-text-light: #e0e0e0;
+    --color-text-muted: #a0a0c0;
+    --color-primary: #6a0dad;
+    --color-secondary: #e91e63;
+    --color-bg: #1a1a2e;
+    --color-card-bg: #2e2e50;
+    --color-text-light: #e0e0e0;
+    --color-text-muted: #a0a0c0;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text-light);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 700px;
+}
+
+h2 {
+    color: var(--color-secondary);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 8px var(--color-secondary);
+}
+
+form.card {
+    background: var(--color-card-bg);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(106, 13, 173, 0.5);
+    padding: 2rem;
+    animation: fadeIn 0.7s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-label {
+    color: var(--color-text-light);
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    background-color: #3a3a65;
+    border: none;
+    color: var(--color-text-light);
+    transition: box-shadow 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #4a4a80;
+    box-shadow: 0 0 10px var(--color-secondary);
+    color: var(--color-text-light);
+    outline: none;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.btn-success {
+    background-color: var(--color-secondary);
+    border: none;
+    font-weight: 700;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px var(--color-secondary);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.btn-success:hover {
+    background-color: var(--color-primary);
+    box-shadow: 0 6px 20px var(--color-primary);
+}
+
+.alert-success {
+    background-color: #2f9e44;
+    border: none;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 15px #2f9e44cc;
+    border-radius: 8px;
+}
+
+.alert-danger {
+    background-color: #c92a2a;
+    border: none;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 15px #c92a2acc;
+    border-radius: 8px;
+}

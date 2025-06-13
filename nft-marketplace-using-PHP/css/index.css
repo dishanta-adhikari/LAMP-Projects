@@ -1,0 +1,172 @@
+/* Artistic Color Palette */
+:root {
+    --color-primary: #6a0dad;
+    /* deep purple */
+    --color-secondary: #e91e63;
+    /* pink */
+    --color-accent: #2196f3;
+    /* bright blue */
+    --color-bg: #1a1a2e;
+    /* dark midnight */
+    --color-card-bg: #2e2e50;
+    /* dark slate */
+    --color-text-light: #e0e0e0;
+    --color-text-muted: #a0a0c0;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-text-light);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--color-secondary);
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px var(--color-secondary);
+}
+
+/* Search form */
+form.input-group {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    box-shadow: 0 0 10px var(--color-secondary);
+    border-radius: 50px;
+    overflow: hidden;
+    background: var(--color-card-bg);
+}
+
+form.input-group input.form-control {
+    border: none;
+    background: transparent;
+    color: var(--color-text-light);
+    font-size: 1.1rem;
+    padding-left: 1.5rem;
+}
+
+form.input-group input.form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+form.input-group button.btn {
+    background: var(--color-secondary);
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+form.input-group button.btn:hover {
+    background: var(--color-accent);
+    box-shadow: 0 0 10px var(--color-accent);
+}
+
+/* Card Grid */
+.row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card styling */
+.card {
+    background: var(--color-card-bg);
+    border: none;
+    border-radius: 15px;
+    color: var(--color-text-light);
+    box-shadow: 0 8px 20px rgba(106, 13, 173, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+}
+
+/* Stagger animation delay */
+.card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px var(--color-secondary);
+    z-index: 10;
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-weight: 700;
+    color: var(--color-secondary);
+    text-shadow: 0 0 5px var(--color-secondary);
+}
+
+.card-text {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background: var(--color-accent);
+    border: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.5);
+}
+
+.btn-primary:hover {
+    background: var(--color-secondary);
+    box-shadow: 0 6px 20px var(--color-secondary);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 180px;
+    }
+}

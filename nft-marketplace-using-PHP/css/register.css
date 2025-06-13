@@ -1,0 +1,300 @@
+/* Common container styling for login/register forms */
+body {
+    background: var(--color-bg);
+    color: var(--color-text-light);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+:root {
+    --color-primary: #6a0dad;
+    /* deep purple */
+    --color-secondary: #e91e63;
+    /* pink */
+    --color-accent: #2196f3;
+    /* bright blue */
+    --color-bg: #1a1a2e;
+    /* dark midnight */
+    --color-card-bg: #2e2e50;
+    /* dark slate */
+    --color-text-light: #e0e0e0;
+    --color-text-muted: #a0a0c0;
+}
+
+
+#register-page,
+#login-page {
+    max-width: 480px;
+    margin: 3rem auto 4rem auto;
+    padding: 2rem 2.5rem;
+    background: #fff0f6;
+    /* very light pink */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.15);
+    /* pinkish shadow */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings styling */
+#register-page h2,
+#login-page h2 {
+    color: #d6336c;
+    /* vibrant pink */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Form label styling */
+#register-page label,
+#login-page label {
+    color: #a50049;
+    /* deeper pink */
+    font-weight: 600;
+}
+
+/* Input focus style */
+#register-page input:focus,
+#login-page input:focus {
+    border-color: #d6336c !important;
+    box-shadow: 0 0 8px rgba(214, 51, 108, 0.3);
+}
+
+/* Button styling */
+#register-page button,
+#login-page button {
+    background-color: #d6336c;
+    border-color: #d6336c;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#register-page button:hover,
+#login-page button:hover {
+    background-color: #a50049;
+    border-color: #a50049;
+}
+
+/* Links styling */
+#register-page a.btn-link,
+#login-page a.btn-link {
+    color: #d6336c;
+    font-weight: 600;
+}
+
+#register-page a.btn-link:hover,
+#login-page a.btn-link:hover {
+    text-decoration: underline;
+    color: #a50049;
+}
+
+/* Alert boxes */
+.alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+    border-radius: 8px;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border-radius: 8px;
+}
+
+/* Responsive tweak for small screens */
+@media (max-width: 576px) {
+
+    #register-page,
+    #login-page {
+        margin: 1.5rem 1rem 3rem 1rem;
+        padding: 1.5rem 1.5rem;
+    }
+}
+
+.tubelight-box {
+    position: relative;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #111;
+    color: white;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Top and bottom lights */
+.tubelight-box::before,
+.tubelight-box::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    left: 0;
+    background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, magenta, red);
+    background-size: 300%;
+    animation: scan-horizontal 6s linear infinite;
+    z-index: 1;
+}
+
+.tubelight-box::before {
+    top: 0;
+}
+
+.tubelight-box::after {
+    bottom: 0;
+    animation-delay: 3s;
+}
+
+/* Left and right lights */
+.tubelight-box .side-light::before,
+.tubelight-box .side-light::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(180deg, red, orange, yellow, lime, cyan, blue, magenta, red);
+    background-size: 300%;
+    animation: scan-vertical 6s linear infinite;
+    z-index: 1;
+}
+
+.tubelight-box .side-light::before {
+    left: 0;
+}
+
+.tubelight-box .side-light::after {
+    right: 0;
+    animation-delay: 3s;
+}
+
+/* Animations */
+@keyframes scan-horizontal {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 300% 50%;
+    }
+}
+
+@keyframes scan-vertical {
+    0% {
+        background-position: 50% 0%;
+    }
+
+    100% {
+        background-position: 50% 300%;
+    }
+}
+
+/* Common container styling for login/register forms */
+body {
+    background: var(--color-bg);
+    color: var(--color-text-light);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+:root {
+    --color-primary: #6a0dad;
+    /* deep purple */
+    --color-secondary: #e91e63;
+    /* pink */
+    --color-accent: #2196f3;
+    /* bright blue */
+    --color-bg: #1a1a2e;
+    /* dark midnight */
+    --color-card-bg: #2e2e50;
+    /* dark slate */
+    --color-text-light: #e0e0e0;
+    --color-text-muted: #a0a0c0;
+}
+
+#register-page,
+#login-page {
+    max-width: 480px;
+    margin: 3rem auto 4rem auto;
+    padding: 2rem 2.5rem;
+    background: var(--color-card-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.15);
+    /* soft pinkish shadow */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings styling */
+#register-page h2,
+#login-page h2 {
+    color: var(--color-secondary);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Form label styling */
+#register-page label,
+#login-page label {
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+/* Input focus style */
+#register-page input:focus,
+#login-page input:focus {
+    border-color: var(--color-secondary) !important;
+    box-shadow: 0 0 8px rgba(233, 30, 99, 0.3);
+}
+
+/* Button styling */
+#register-page button,
+#login-page button {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#register-page button:hover,
+#login-page button:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+/* Links styling */
+#register-page a.btn-link,
+#login-page a.btn-link {
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+#register-page a.btn-link:hover,
+#login-page a.btn-link:hover {
+    text-decoration: underline;
+    color: var(--color-primary);
+}
+
+/* Alert boxes */
+.alert-danger {
+    background-color: #f8d7da;
+    /* keeping the soft red */
+    color: #842029;
+    border-radius: 8px;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    /* keeping the soft green */
+    color: #0f5132;
+    border-radius: 8px;
+}
+
+/* Responsive tweak for small screens */
+@media (max-width: 576px) {
+
+    #register-page,
+    #login-page {
+        margin: 1.5rem 1rem 3rem 1rem;
+        padding: 1.5rem 1.5rem;
+    }
+}

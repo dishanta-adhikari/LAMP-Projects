@@ -1,0 +1,96 @@
+/* NFT Artwork Detail Styling */
+body {
+    background: var(--color-bg);
+    color: var(--color-text-light);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+:root {
+    --color-primary: #6a0dad;
+    /* deep purple */
+    --color-secondary: #e91e63;
+    /* pink */
+    --color-accent: #2196f3;
+    /* bright blue */
+    --color-bg: #1a1a2e;
+    /* dark midnight */
+    --color-card-bg: #2e2e50;
+    /* dark slate */
+    --color-text-light: #e0e0e0;
+    --color-text-muted: #a0a0c0;
+}
+
+
+/* Image container override to prevent stretching */
+.nft-artwork-img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Artwork title styling */
+.nft-artwork-title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #f0f0f0;
+    text-shadow: 0 0 8px #ff6ec4;
+}
+
+/* Artist and description text */
+.nft-artwork-artist,
+.nft-artwork-description {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-top: 0.5rem;
+}
+
+/* Price styling */
+.nft-artwork-price {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    color: #4ade80;
+    font-weight: 700;
+}
+
+/* Mint button custom style */
+.nft-mint-btn {
+    background-color: #4ade80;
+    border: none;
+    color: #121212;
+    font-weight: 700;
+    padding: 0.75rem 0;
+    border-radius: 50px;
+    box-shadow:
+        0 0 8px #4ade80,
+        0 0 15px #22c55e;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.nft-mint-btn:hover,
+.nft-mint-btn:focus {
+    box-shadow:
+        0 0 20px #86efac,
+        0 0 35px #22c55e;
+    transform: scale(1.05);
+    outline: none;
+}
+
+/* Login prompt link */
+.nft-login-prompt a {
+    color: #ff6ec4;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.nft-login-prompt {
+    margin-top: 1.5rem;
+    color: #ddd;
+    font-size: 1.1rem;
+}
